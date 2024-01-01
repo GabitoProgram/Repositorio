@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import Youtube from "../components/icons/youtube.astro";
+import Github from "../components/icons/github.astro";
+import Iconsfull from "../components/iconsfull.astro";
+import Linked from "../components/icons/linked.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <section class="wfull lg:w-[740px] mx-auto py-10">
+      <img
+        class="rounded-full w-12 h-12 mb-5"
+        src="https://avatars.githubusercontent.com/u/2132216?v=4"
+        alt="mi foto"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hola soy Gabito
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para Trabajar</Badge></a
+        >
+      </h1>
+      <h2 class="text-2xl opacity-80 text-wrap">
+        <span>+1 año de experiencia.</span>
+        <span class="text-yellow-200/90"
+          >Desarrollador web y ayudante en institutos privados.</span
+        >
+        <span class="text-red-100/90">De Bolivia 🙌.</span>
+        <span class="opacity-60"
+          >Especializado a dar soluciones a problemas únicos.
+        </span>
+      </h2>
+
+      <ul>
+        <nav class="flex gap-x-2 mt-5">
+          <Iconsfull href="www.youtube.com/@gabrielcallisayadiaz3887">
+            <Youtube class="w-6 h-6" />
+             youtube
+          </Iconsfull>
+          <Iconsfull href="https://github.com/GabitoProgram/prueba">
+            <Github class="w-6 h-6" />
+             Github
+          </Iconsfull>
+          <Iconsfull href="https://www.linkedin.com/in/gabriel-callisaya-diaz-b335662a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <Linked class="w-6 h-6" />
+             Linkedln
+          </Iconsfull>
+          <nav></nav>
+        </nav>
+      </ul>
+    </section>
+  </main>
+</Layout>
