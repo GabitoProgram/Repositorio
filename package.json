@@ -2,7 +2,10 @@
   "name": "fast-fireball",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "http:/GabitoProgram.github.io/Repositorio",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
@@ -14,6 +17,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/onest": "^5.0.2",
     "astro": "^4.0.8",
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3"
   }
